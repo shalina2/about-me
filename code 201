@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Second Awesome 201 App</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>All About Me</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <ul>
+          <li>I love code 201</li>
+          <li>
+            I love hiking
+          </li>
+        <li>Red is my favorite color</li>
+        <li>
+          I am 5'7
+        </li>
+        <li>
+          'I love tea'
+        </li>
+      </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Thanks For Playing</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
