@@ -1,5 +1,9 @@
 'use strict';
 
+var name=prompt("what is your name?");
+console.log('uname ' + name);
+alert('Hi' + name);
+
 var code = prompt("you think i like code 201?");
 
 if (code.toLowerCase() === "yes") {
@@ -39,29 +43,55 @@ if (color === "yes") {
         }else console.log('not really,i prefer tea more')
                 alert('not really,i prefer tea more');
     } 
-    var love =prompt('What do you think I love Most?');
-    var answer =[ethiopia,dancing,eating,swimming,hiking,sleeping]
-    var arraylength =answer.length;
-    var roundnumber=0;
-    var i;
-        for (i = 0; i< arraylength;i++)
-            roundnumber = (i+ 1);{
-                console.log('you got it')
-            
-            alert('you got it');
-        } for (i = 0; i< arraylength;i++)
-        roundnumber = (i+ 2);{
-            console.log('I dont mind it')
-        alert('I dont mind it')}
-        var number =prompt('How long do u think i moved to the states?');
-        var answer = [1,3,5,7,9,0];
-        for (i=0;i< answer.length;i++);{
-            console.log('you missed it,but try again')
-            alert('you missed it,but try again')}
-        for (i=1;i< answer.length;i++);{
-            console.log('yay,you are right')
-            alert('yay,you are right')}
-        
-        
-        
+   
+
+    //var myanswers =[ethiopia,dancing,eating,swimming,hiking,sleeping];
+    //var i;
     
+   for (var i = 0; i < 6; i++) {
+        //console.log('countingi ' + i);
+        var love =prompt('What do you think I love Most?');
+        var myanswers = ['ethiopia','dancing','eating','swimming','hiking','sleeping'];
+        love =(love.toLowerCase())
+        var guessedright=(false)
+
+        for (var j = 0; j < myanswers.length;j++) {
+
+            console.log('incrementj ' + j);
+            if(love === myanswers[j]) {
+              guessedright=true      
+            
+            alert('you got it' + myanswers);
+            //correctanswerstotal++;
+            break;
+            }
+            console.log('indexj ' + myanswers[j]);
+            if(j===myanswers.length){
+                console.log(myanswers.length);
+                alert('sorry you missed it');
+            }
+
+        } 
+        if(guessedright){
+            break;
+        }
+        if(i>=5){
+            //alert('sorry you missed it ' + myanswers);
+        }
+            //alert('hello ' + name);
+
+          //  console.log('I dont mind it')
+       // alert('I dont mind it')}
+       // var number =prompt('How long do u think i moved to the states?');
+        //var answer = [3];
+       // for (i=0;i< answer.length;i++);{
+          //  console.log('you missed it,but try again');
+           // alert('you missed it,but try again')}
+       // for (i=1;i< answer.length;i++);{
+            //console.log('yay,you are right')
+           // alert('yay,you are right')
+            }
+        
+        
+        
+        
