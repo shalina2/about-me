@@ -1,12 +1,15 @@
 'use strict';
 
-var name=prompt("what is your name?");
+function Uname() { 
+prompt("what is your name?");
 console.log('uname ' + name);
-alert('Hi' + name);
+alert('Hi' + name);}
+Uname();
 
-var code = prompt("you think i like code 201?");
+function code() {
+    var like =prompt("you think i like code 201?");
 
-if (code.toLowerCase() === "yes") {
+if (like.toLowerCase() === "yes") {
      console.log('you are very smart');
      alert('you are very smart');
  } else{ 
@@ -14,6 +17,8 @@ if (code.toLowerCase() === "yes") {
      alert('I do love code 201');
      
  }
+}
+code();
  var fun = prompt('do you think i like hiking?')
  if (fun.toLowerCase() === "yes") {
     console.log('you got it');
@@ -45,9 +50,6 @@ if (color === "yes") {
     } 
    
 
-    //var myanswers =[ethiopia,dancing,eating,swimming,hiking,sleeping];
-    //var i;
-    
    for (var i = 0; i < 6; i++) {
         //console.log('countingi ' + i);
         var love =prompt('What do you think I love Most?');
@@ -75,23 +77,27 @@ if (color === "yes") {
         if(guessedright){
             break;
         }
-        if(i>=5){
-            //alert('sorry you missed it ' + myanswers);
-        }
-            //alert('hello ' + name);
-
-          //  console.log('I dont mind it')
-       // alert('I dont mind it')}
-       // var number =prompt('How long do u think i moved to the states?');
-        //var answer = [3];
-       // for (i=0;i< answer.length;i++);{
-          //  console.log('you missed it,but try again');
-           // alert('you missed it,but try again')}
-       // for (i=1;i< answer.length;i++);{
-            //console.log('yay,you are right')
-           // alert('yay,you are right')
+        
+        for(var i=0; i< 4; i++) {
+            console.log('trackVarI ' + i);
+            var numberguess =prompt('How many years ago you think i moved the states?');
+            numberguess=parseInt(numberguess,5);
+            console.log('beforeIfnumberGuess ' + numberguess);
+            if(numberguess===4) {
+            alert('YAY,You got it!!');
+            correctAnswersTotal++;
+            console.log('correctNumberGuess ' + numberguess);
+            break;
             }
-        
-        
-        
-        
+            else if (numberguess <4){
+                console.log('toolow' + numberguess);
+                alert('thats too low,try again');
+            }
+            else if(numberguess > 4) {
+                console.log('Now,thats too high' + numberguess);
+                alert('you are guessing too high')
+            }else { alert('you can try again')}
+            
+       
+        }
+    }
