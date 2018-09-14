@@ -1,19 +1,26 @@
 'use strict';
 
-var name=prompt("what is your name?");
+function userName (){
+var name = prompt("what is your name?");
 console.log('uname ' + name);
-alert('Hi' + name);
+alert('Hi ' + name);
+}
 
-var code = prompt("you think i like code 201?");
+userName();
 
-if (code.toLowerCase() === "yes") {
+function code () {
+ var like=prompt("you think i like code 201?");
+if (like.toLowerCase() === "yes") {
      console.log('you are very smart');
      alert('you are very smart');
  } else{ 
      console.log('I do love code 201');
      alert('I do love code 201');
      
- }
+    }
+}
+    code();
+
  var fun = prompt('do you think i like hiking?')
  if (fun.toLowerCase() === "yes") {
     console.log('you got it');
