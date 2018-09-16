@@ -1,6 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
 function Uname() { 
 prompt("what is your name?");
 console.log('uname ' + name);
@@ -10,35 +9,15 @@ Uname();
 function code() {
     var like =prompt("you think i like code 201?");
 
-=======
-function userName (){
-var name = prompt("what is your name?");
-console.log('uname ' + name);
-alert('Hi ' + name);
-}
-
-userName();
-
-function code () {
- var like=prompt("you think i like code 201?");
->>>>>>> d68a3e0d87b45d38128fefa4287ae4e59e90a38f
 if (like.toLowerCase() === "yes") {
      console.log('you are very smart');
      alert('you are very smart');
  } else{ 
      console.log('I do love code 201');
      alert('I do love code 201');
-     
-<<<<<<< HEAD
  }
 }
 code();
-=======
-    }
-}
-    code();
-
->>>>>>> d68a3e0d87b45d38128fefa4287ae4e59e90a38f
  var fun = prompt('do you think i like hiking?')
  if (fun.toLowerCase() === "yes") {
     console.log('you got it');
