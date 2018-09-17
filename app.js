@@ -62,7 +62,7 @@ if (color === "yes") {
             if(love === myanswers[j]) {
               guessedright=true      
             
-            alert('you got it' + myanswers);
+            alert('you got it' );
             //correctanswerstotal++;
             break;
             }
