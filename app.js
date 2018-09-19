@@ -63,18 +63,18 @@ if (color === "yes") {
               guessedright=true      
             
             alert('you got it' );
-            //correctanswerstotal++;
+            correctanswerstotal++;
             break;
             }
-            console.log('indexj ' + myanswers[j]);
-            if(j===myanswers.length){
-                console.log(myanswers.length);
-                alert('sorry you missed it');
-            }
+            //console.log('indexj ' + myanswers[j]);
+            else if(love ===myanswers[j]) {
+                console.log('guessedright=false')
+                alert('please try again');}
+                
+         else{alert('sorry you missed it');
+            
 
-        } 
-        if(guessedright){
-            break;
+        
         }
         
         for(var i=0; i< 4; i++) {
@@ -100,3 +100,4 @@ if (color === "yes") {
        
         }
     }
+}
